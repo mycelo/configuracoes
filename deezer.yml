@@ -1,0 +1,9 @@
+message: Ola
+spring:
+  datasource:
+    url: jdbc:sqlite:MyMusic.db
+    username: ""
+    password: ""
+    driver-class-name:  org.sqlite.JDBC
+    show-sql: true
+    database-platform: com.dojo.musicas.config.SQLiteDialect
