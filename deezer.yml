@@ -1,4 +1,4 @@
-message: Ola
+message: Ola git
 spring:
   datasource:
     url: jdbc:sqlite:MyMusic.db
