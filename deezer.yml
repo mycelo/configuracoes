@@ -1,4 +1,8 @@
 message: Ola git
+musicapp:
+  id: ${random.int[1,100]}
+server:
+  port: 0
 spring:
   jpa:
     show-sql: true
@@ -8,3 +12,11 @@ spring:
     password: ""
     driver-class-name:  org.sqlite.JDBC
     database-platform: com.dojo.musicas.config.SQLiteDialect
+  output:
+    ansi:
+      enabled: always
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${musicapp.id}}}
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
