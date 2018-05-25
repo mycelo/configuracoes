@@ -1,4 +1,9 @@
 message: Ola git validacao mirandinha
+management:
+  endpoints:
+    web: 
+      exposure:
+        include: "*"
 musicapp:
   id: ${random.int[1,100]}
 server:
