@@ -1,9 +1,10 @@
 message: Ola git
 spring:
+  jpa:
+    show-sql: true
   datasource:
     url: jdbc:sqlite:MyMusic.db
     username: ""
     password: ""
     driver-class-name:  org.sqlite.JDBC
-    show-sql: true
     database-platform: com.dojo.musicas.config.SQLiteDialect
