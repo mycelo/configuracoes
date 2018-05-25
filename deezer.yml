@@ -1,3 +1,4 @@
+message: Ola git
 musicapp:
   id: ${random.int[1,100]}
 server:
