@@ -3,6 +3,12 @@ musicapp:
   id: ${random.int[1,100]}
 server:
   port: 0
+management:
+  endpoint:
+    info:
+      enabled: true  
+    health:
+      enabled: true  
 spring:
   jpa:
     show-sql: true
