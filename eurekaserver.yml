@@ -3,6 +3,8 @@ server:
 eureka:
   server:
     enableSelfPreservation: false
+  instance:
+    hostname: eurekaserver
   client:
     register-with-eureka: false
     fetch-registry: false
