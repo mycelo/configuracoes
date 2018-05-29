@@ -1,14 +1,20 @@
+management:
+ endpoint:
+   info:
+     enabled: true  
+   health:
+     enabled: true
+   shutdown:
+     enabled: true
+ endpoints:
+    web:
+      exposure:
+        include: "*"
 message: Ola git teste mirandinha
 musicapp:
   id: ${random.int[1,100]}
 server:
   port: 0
-management:
-  endpoint:
-    info:
-      enabled: true  
-    health:
-      enabled: true  
 spring:
   jpa:
     show-sql: true
