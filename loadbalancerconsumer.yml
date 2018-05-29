@@ -9,6 +9,6 @@ management:
  endpoints:
     web:
       exposure:
-        include: refresh, status, info
+        include: "*"
 server:
   port: 9191
