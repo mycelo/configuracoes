@@ -14,6 +14,6 @@ server:
   port: 9191
 eureka:
   instance:
-    instanceId: ${spring.application.name}:${vcap.application.instance_id}
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${server.port}}
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
