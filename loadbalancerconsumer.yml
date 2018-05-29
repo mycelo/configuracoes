@@ -1,2 +1,19 @@
+management:
+ endpoint:
+   info:
+     enabled: true  
+   health:
+     enabled: true
+   shutdown:
+     enabled: true
+ endpoints:
+    web:
+      exposure:
+        include: "*"
 server:
   port: 9191
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${server.port}}
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
