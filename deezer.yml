@@ -1,5 +1,15 @@
-management.endpoint.shutdown.enabled: true
-management.endpoints.web.exposure.include: refresh, status, info
+management:
+ endpoint:
+   info:
+     enabled: true  
+   health:
+     enabled: true
+  shutdown:
+    enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: refresh, status, info 
 message: Ola git teste mirandinha
 musicapp:
   id: ${random.int[1,100]}
