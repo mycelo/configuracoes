@@ -1,2 +1,4 @@
+management.endpoint.shutdown.enabled: true
+management.endpoints.web.exposure.include: refresh, status, info
 server:
   port: 9191
