@@ -9,7 +9,7 @@ management:
  endpoints:
     web:
       exposure:
-        include: refresh, status, info
+        include: "*"
 message: Ola git teste mirandinha
 musicapp:
   id: ${random.int[1,100]}
