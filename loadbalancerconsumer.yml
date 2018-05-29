@@ -4,11 +4,11 @@ management:
      enabled: true  
    health:
      enabled: true
-  shutdown:
-    enabled: true
-  endpoints:
+   shutdown:
+     enabled: true
+ endpoints:
     web:
       exposure:
-        include: refresh, status, info 
+        include: refresh, status, info
 server:
   port: 9191
