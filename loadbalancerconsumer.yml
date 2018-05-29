@@ -1,4 +1,14 @@
-management.endpoint.shutdown.enabled: true
-management.endpoints.web.exposure.include: refresh, status, info
+management:
+ endpoint:
+   info:
+     enabled: true  
+   health:
+     enabled: true
+  shutdown:
+    enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: refresh, status, info 
 server:
   port: 9191
