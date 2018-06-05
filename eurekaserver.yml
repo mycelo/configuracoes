@@ -6,7 +6,3 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-turbine:
-  aggregator:
-    clusterConfig: SAMPLE-HYSTRIX-AGGREGATE
-  appConfig: SAMPLE-HYSTRIX-AGGREGATE
